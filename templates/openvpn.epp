@@ -1,0 +1,5 @@
+<%- |
+  String  $gauth_pam_lib
+| -%>
+auth required <%= $gauth_pam_lib %> forward_pass
+auth required pam_sss.so use_first_pass
